@@ -4,7 +4,7 @@
 
 ## 服务器介绍
 
-服务器：HECS h华为云耀云服务器
+服务器：HECS 华为云耀云服务器
 
 2C4G
 
@@ -119,3 +119,9 @@ MemAvailable:     391176 kB
 ## 踩坑
 
 gitlab初步配置好后，就急着创建新的仓库，并且尝试clone下来，这时发现怎么clone都不行，ssh keys也设置了，定位了好几个多小时，才发现，一是发现ssh端口没有开，于是设置了上述第5步的2222端口，还是不行，想了下，由于是公网服务器，默认2222端口，是不对外开放的，于是修改安全组，开放2222端口，接下来就可以顺利clone仓库了。
+
+
+
+## References
+
+1. https://docs.gitlab.com/ee/install/docker.html
